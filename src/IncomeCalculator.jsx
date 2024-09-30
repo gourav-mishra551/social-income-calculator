@@ -84,7 +84,7 @@ const IncomeCalculator = () => {
         labels: ['Earnings Per Post', 'Monthly Income'],
         datasets: [
             {
-                label: 'Income in USD',
+                label: 'Income in Rupees',
                 data: [income.perPost, income.monthly],
                 backgroundColor: ['#4CAF50', '#2196F3'],
             },
@@ -154,7 +154,7 @@ const IncomeCalculator = () => {
                             />
                         </div>
                         <div>
-                            <label className="block text-gray-700 font-bold mb-2">Youtube ID</label>
+                            <label className="block text-gray-700 font-bold mb-2">Youtube Channel</label>
                             <input
                                 type="text"
                                 name="youtubeId"
@@ -249,8 +249,8 @@ const IncomeCalculator = () => {
                     <>
                         <div className="mb-6 text-center">
                             <h2 className="text-2xl font-bold text-[#BD5524]">Estimated Sponser Ship Income:</h2>
-                            <p className="text-lg">Earnings per Post: ${income.perPost}</p>
-                            <p className="text-lg">Monthly Income (4 posts): ${income.monthly}</p>
+                            <p className="text-lg">Earnings per Post:  ₹{income.perPost}</p>
+                            <p className="text-lg">Monthly Income (4 posts):  ₹{income.monthly}</p>
                         </div>
                         <div className='flex sm:flex-row flex-col justify-between items-center'>
                             <div className='sm:w-[50%] w-[90%]'>
