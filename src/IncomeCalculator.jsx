@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Bar, Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement } from 'chart.js';
 import axios from 'axios';
-
+import { Link } from 'react-router-dom';
 // Register necessary components for ChartJS
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement);
 
@@ -106,12 +106,26 @@ const IncomeCalculator = () => {
 
     return (
         <>
-            <div className='sm:px-10 px-5 py-3 flex bg-[#BD5524]'>
-                <a href="https://unifie.in/"> <img src="./logo.webp" alt="unifie logo" className='w-20 ' /> </a>
-               
-                <p className='ml-5 mt-2 text-white text-[16px] font-medium italic sm:block hidden'> " THE JOURNEY WILL START WHEN
-                    <br />YOU REACH THE RIGHT SOLUTIONS "
-                </p>
+            <div className='sm:px-10 px-5 py-3 flex bg-[#BD5524] justify-between'>
+                <div className='flex'>
+                    <a href="https://unifie.in/"> <img src="./logo.webp" alt="unifie logo" className='w-20 ' /> </a>
+                    <p className='ml-5 mt-2 text-white text-[16px] font-medium italic sm:block hidden'> " THE JOURNEY WILL START WHEN
+                        <br />YOU REACH THE RIGHT SOLUTIONS "
+                    </p>
+                </div>
+
+                <ul className='text-white flex items-center'>
+                    <Link to = "/brand">
+                        <li className='mx-4 text-[16px] font-semibold font-serif cursor-pointer'>
+                            Brand
+                        </li>
+                    </Link>
+                    <Link to = "/">
+                        <li className='mx-4 text-[16px] font-semibold font-serif cursor-pointer'>
+                            Influencer
+                        </li>
+                    </Link>
+                </ul>
             </div>
 
             <div className="container mx-auto p-6">
