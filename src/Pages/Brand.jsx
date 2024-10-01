@@ -116,6 +116,8 @@ const Brand = () => {
                                 <option value="beauty">Beauty</option>
                                 <option value="fitness">Fitness</option>
                                 <option value="tech">Tech</option>
+                                <option value="gaming">Gaming</option>
+                                <option value="entertainment">Entertainment</option>
                             </select>
                         </div>
                         <div>

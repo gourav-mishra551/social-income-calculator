@@ -115,12 +115,12 @@ const IncomeCalculator = () => {
                 </div>
 
                 <ul className='text-white flex items-center'>
-                    <Link to = "/brand">
+                    <Link to="/brand">
                         <li className='mx-4 text-[16px] font-semibold font-serif cursor-pointer'>
                             Brand
                         </li>
                     </Link>
-                    <Link to = "/">
+                    <Link to="/">
                         <li className='mx-4 text-[16px] font-semibold font-serif cursor-pointer'>
                             Influencer
                         </li>
@@ -224,6 +224,8 @@ const IncomeCalculator = () => {
                                 <option value="beauty">Beauty</option>
                                 <option value="fitness">Fitness</option>
                                 <option value="tech">Tech</option>
+                                <option value="gaming">Gaming</option>
+                                <option value="entertainment">Entertainment</option>
                             </select>
                         </div>
                         <div>
